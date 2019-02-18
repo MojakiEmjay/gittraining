@@ -1,0 +1,78 @@
+<!DOCType html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+function mytest(){
+var monitoringchoice=document.getElementById("ComboBox1");
+var option=document.createElement("option");
+if(document.getElementById("Monitoringtype").value=="RUM"){
+option.text="MOBILE";
+option.text="WEB";
+monitoringchoice.add(option,1);
+}
+}
+</script>
+<h1>Monitoring Requirements Template</h1>
+<form>
+<table>
+<tr><td><p>Name of Applicant:</p></td><td><input Type="Text"></tr></td>
+<tr><td><p id="Company">Name of Company:</p></td><td><select id="nameofcompany">
+<option>DCS(DISCOVERY-CONSULTING SERVICES)</option>
+<option>DFC(DISCOVERY FINANCIAL SERVICES)</option>
+<option>DISCOVERY-BANK</option>
+<option>DISCOVERY-CARD</option>
+<option>DISCOVERY-CORPORATE</option>
+<option>DISCOVERY-EMPLOYEE-BENEFITS</option>
+<option>DISCOVERY-FINANCE</option>
+<option>DISCOVERY-HEALTH</option>
+<option>DISCOVERY-INSURE</option>
+<option>DISCOVERY-INVEST</option>
+<option>DISCOVERY-LIFE</option>
+<option>DISCOVERY-VITALITY</option>
+<option>HUMAN-VITALITY</option>
+<option>PING-AN HEALTH</option>
+<option>TVG(THE VITALITY GROUP)</option>
+<option>VITALITY GROUP</option>
+<option>VITALITY INVEST</option>
+<option>VITALITY-HEALTH</option>
+<option>VITALITY-LIFE</option>
+</select></tr></td>
+<tr><td><p id="email">Email Address:</p></td><td><input Type="Text"></tr></td>
+<tr><td><p id="Monitoring">Type of Monitoring:</p></td><td><select id="Monitoringtype" onclick="mytest()">
+<option>RUM</option>
+<option>Synthetic</option>
+<option>Process</option>
+<option>Host</option>
+</select></tr></td>
+<tr><td><p id="Device">Device:</p></td><td><select id="ComboBox1">
+<!option>MOBILE</option>
+<!option>WEB</option>
+<!option>Browser</option>
+<!option>Basic HTTP</option>
+<!option>Technology</option>
+<!option>Linux</option>
+<!option>Windows</option>
+</select>
+</tr></td>
+<tr><td><p id="Technology">Type of Technology:</p></td><td><select id="ComboBox2">
+<option>Oracle Weblogic</option>
+<option>.Net</option>
+<option>Apache Tomcat</option>
+<option>Windows</option>
+<option>GO</option>
+<option>Apahce HTTP</option>
+<option>IIS</option>
+<option>Java</option>
+<option>ASP.Net</option>
+<option>IIS APP Pool</option>
+<option>Jetty</option>
+<option>Microsoft SQL</option></select></tr></td>
+<tr><td><p>Application name:</p></td><td><input Type="Text"></tr></td>
+<tr><td><p>Entry point:</p></td><td><input Type="Text"></tr></td>
+<tr><td><input Type="button" value="SUBMIT" id="Submitbutton1"></tr></td>
+</table>
+</form>
+</body>
+</html>
